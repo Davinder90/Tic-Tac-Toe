@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="header">
+        <h1>Tic Tac Toe</h1>
+      </div>
+      <div class="game">
+        <div class="entries">
+          <!-- column1 -->
+          <div
+            id="block1"
+            onClick="handleButton(1)"
+            class="block upperLeft"
+          ></div>
+          <div id="block2" onClick="handleButton(2)" class="block"></div>
+          <div
+            id="block3"
+            onClick="handleButton(3)"
+            class="block upperRight"
+          ></div>
+          <!-- column2 -->
+          <div id="block4" onClick="handleButton(4)" class="block"></div>
+          <div id="block5" onClick="handleButton(5)" class="block"></div>
+          <div id="block6" onClick="handleButton(6)" class="block"></div>
+          <!-- column3 -->
+          <div
+            id="block7"
+            onClick="handleButton(7)"
+            class="block bottomLeft"
+          ></div>
+          <div id="block8" onClick="handleButton(8)" class="block"></div>
+          <div
+            id="block9"
+            onClick="handleButton(9)"
+            class="block bottomRight"
+          ></div>
+        </div>
+      </div>
+      <div class="output">
+        <p id="userwin" class="otp">User Wins : 0</p>
+        <p id="computerwin" class="otp">Computer Wins : 0</p>
+        <p id="tie" class="otp">Tie Matches : 0</p>
+        <p id="match" class="otp">No of Matches : 0</p>
+      </div>
+    </div>
+    <script src="project.js"></script>
+  </body>
+</html>

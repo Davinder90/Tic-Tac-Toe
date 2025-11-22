@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color : #DDDDDD; */
+  background-color: hsl(0, 0%, 90%);
+}
+
+.outer {
+  margin-top: 65px;
+  position: relative;
+  min-height: 612px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.724);
+  box-shadow: 5px 5px 10px rgba(255, 64, 0, 0.478),
+    -5px -5px 10px rgba(255, 64, 0, 0.478);
+}
+
+.header {
+  /* border : 2px solid black; */
+  display: flex;
+  justify-content: space-around;
+  background-color: #e70000;
+  padding: 0 1px;
+  width: 100%;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.402);
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: #fffdef;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+}
+
+.entries {
+  margin-top: 30px;
+  /* border : 2px solid black;*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 310px;
+}
+
+.block {
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  cursor: pointer;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover {
+  transition: background-color 0.25s;
+}
+
+.hover:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+
+.hover:active {
+  background-color: hsl(0, 0%, 60%);
+}
+
+.output {
+  position: absolute;
+  width: 385px;
+  margin-top: 30px;
+  background-color: #e70000;
+  border-top: 4px solid rgba(0, 0, 0, 0.402);
+}
+
+.otp {
+  font-size: 1.5rem;
+  margin: 10px;
+  color: white;
+}
+
+.valueDesign {
+  height: 100px;
+  width: 100px;
+  font-family: Helvetica;
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+
+.user {
+  color: rgb(68, 238, 68);
+}
+
+.computer {
+  color: rgb(231, 19, 19);
+}
